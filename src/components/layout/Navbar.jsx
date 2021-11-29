@@ -1,11 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
-          React User
+          CRUD APP
         </NavLink>
         <button
           className="navbar-toggler"
@@ -38,6 +38,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <Link to="/users/add" className="btn btn-outline-light">
+          Add User
+        </Link>
       </div>
     </nav>
   );
